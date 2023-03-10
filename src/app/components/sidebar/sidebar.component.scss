@@ -7,8 +7,17 @@
     background-color: #48566B;
     border-radius: 10px;
     text-align: center;
+    align-items: center;
     color: #fff;
     @include sm{
         width: 15%;
     }
 }
+
+
+.mat-divider{
+    margin: 10px 0 10px 10%;
+    width: 80%;
+    border-color: #56616E;
+}
+

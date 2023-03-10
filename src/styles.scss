@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+$color-base: #1E1E28;
+$color-sidebar: #48566B;
+@font-face{
+    font-family: 'Inter', sans-serif;
+    src: url('fonts/Inter-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}

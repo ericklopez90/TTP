@@ -4,42 +4,56 @@
         <div class="col-11 offset-1">
 
             <!--Icon-->
-            <div class="row">
-                <div class="col-10">
-
+            <div class="row my-4">
+                <div class="col-6">
+                    <img class="icon-logo" [src]="iconLogo">
                 </div>
                 
                 <!--Search-->
-                <div class="col-2">
-
+                <div class="col-4 offset-2">
+                    <button mat-fab class="button-search">
+                        <mat-icon class="icon-search">search</mat-icon>
+                      </button>
                 </div>
-                
             </div>
+
             <!--First Buttons-->
             <div class="row">
-
-                <li>asd</li>
+                <links
+                class="my-3"
+                *ngFor="let link of linksPrimary"
+                [principalButton]=link.principalButton
+                [text]=link.text
+                [icon]="link.icon!"
+                [actionPrincipal]="link.actionPrincipal!"
+                ></links>
             </div>
-            <mat-divider></mat-divider>
+
+            <mat-divider class="my-3"></mat-divider>
 
             <!--Second Buttons-->
             <div class="row">
-
-                <li>asd</li>
+                <links
+                class="my-3"
+                *ngFor="let link of linksSecondary"
+                [principalButton]=link.principalButton
+                [text]=link.text
+                [action]="link.action!"
+                ></links>
             </div>
-            <mat-divider></mat-divider>
+
+            <mat-divider class="my-3"></mat-divider>
 
             <!--More Buttons-->
-
             <div class="row">
-
-
-
-
+                <links
+                class="my-3"
+                *ngFor="let link of linksMore"
+                [principalButton]=link.principalButton
+                [text]=link.text
+                [action]="link.action!"
+                ></links>
             </div>
-
-
         </div>
     </div>
-
 </div>

@@ -5,19 +5,29 @@
     width: 80%;
     height: 100%;
     background-color: #48566B;
-    border-radius: 10px;
-    text-align: center;
-    align-items: center;
-    color: #fff;
+    border-radius: 20px;
+    color: #dcdee0;
     @include sm{
-        width: 15%;
+        width: 25%;
     }
 }
 
-
 .mat-divider{
-    margin: 10px 0 10px 10%;
-    width: 80%;
+    width: 95%;
+    border-top-width: 2px;
     border-color: #56616E;
 }
 
+.icon-logo{
+    height: 100%;
+    width: 100%;
+}
+
+.button-search{
+  background-color: #596477;
+  box-shadow: none !important;
+}
+
+.icon-search{
+    size: 5px !important;
+}

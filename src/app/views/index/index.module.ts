@@ -2,14 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IndexComponent } from './index.component';
 import { Routes, RouterModule } from '@angular/router';
-import { SidebarModule } from '../../components/sidebar/sidebar.module';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: IndexComponent,
-  }
-];
+import { SidebarModule } from '../../components/sidebar/sidebar.module';
+import { NavbarModule } from '../../components/navbar/navbar.module';
 
 
 @NgModule({
@@ -19,7 +14,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     SidebarModule,
-    RouterModule.forChild(routes)
+    NavbarModule,
+
   ]
 })
 export class IndexModule { }

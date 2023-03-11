@@ -1,0 +1,17 @@
+@import "../../app.component.scss";
+
+.button-sidebar {
+    background-color: #1E1E28;
+    box-shadow: none !important;
+}
+
+.logo-white{
+    width: 60%;
+    @include sm {
+        width: 20%;
+    }
+}
+
+.icon-sidebar {
+    size: 5px !important;
+}

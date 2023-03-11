@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-index',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class IndexComponent {
 
+  @Input() sideBarOn = false;
+
+  actSideBar(event: boolean){
+    this.sideBarOn = event == true ? false : true
+  }
 }

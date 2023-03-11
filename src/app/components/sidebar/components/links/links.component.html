@@ -1,24 +1,24 @@
 <!--Principal Button-->
 <div class="row align-items-center" *ngIf="principalButton; else secondary" (click)="routerNavigate(link)">
-    <div class="col-3">
-        <img class="icon-principal" [src]="icon">
-    </div>
-    <div class="col-7">
-        <span>{{text}}</span>
-    </div>
-    <div class="col-2">
-        <img class="action-principal" [src]="actionPrincipal">
-    </div>
+  <div class="col-3">
+    <img class="icon-principal" [src]="icon">
+  </div>
+  <div class="col-7">
+    <span>{{text}}</span>
+  </div>
+  <div class="col-2">
+    <img class="action-principal" [src]="actionPrincipal">
+  </div>
 </div>
 
 <!--More Button-->
 <ng-template #secondary>
-<div class="row align-items-center" (click)="routerNavigate(link)">
+  <div class="row align-items-center" (click)="routerNavigate(link)">
     <div class="col-10 align-middle">
-        <span>{{text}}</span>
+      <span>{{text}}</span>
     </div>
     <div class="col-2" *ngIf="action">
-        <span>></span>
+      <span>></span>
     </div>
-</div>
+  </div>
 </ng-template>

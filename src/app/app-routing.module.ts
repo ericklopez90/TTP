@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./views/index/index.module').then(m => m.IndexModule)
+  },
+  {
+    path: 'control-remoto',
+    loadChildren: () => import('./views/remote-control/remote-control.module').then(m => m.RemoteControlModule)
   }
 ];
 

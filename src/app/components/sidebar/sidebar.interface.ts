@@ -4,4 +4,5 @@ export interface ILinks {
     icon?: string;
     actionPrincipal?: string;
     action?: boolean;
+    link:string;
 }

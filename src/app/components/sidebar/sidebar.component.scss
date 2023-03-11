@@ -1,33 +1,36 @@
 @import "../../app.component.scss";
 
-#sidebar{
-    position:fixed;
+#sidebar {
+    position: fixed;
     width: 80%;
     height: 100%;
     background-color: #48566B;
     border-radius: 20px;
     color: #dcdee0;
-    @include sm{
+    z-index: 9999;
+
+    @include sm {
         width: 25%;
+        margin-top: -1.2%;
     }
 }
 
-.mat-divider{
+.mat-divider {
     width: 95%;
     border-top-width: 2px;
     border-color: #56616E;
 }
 
-.icon-logo{
+.icon-logo {
     height: 100%;
     width: 100%;
 }
 
-.button-search{
-  background-color: #596477;
-  box-shadow: none !important;
+.button-search {
+    background-color: #596477;
+    box-shadow: none !important;
 }
 
-.icon-search{
+.icon-search {
     size: 5px !important;
 }

@@ -3,12 +3,14 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [
+    
+  ]
 })
 export class AppComponent {
   title = 'TTP';
 
-  
   @Input() sideBarOn = false;
 
   actSideBar(event: boolean){
@@ -19,4 +21,5 @@ export class AppComponent {
     console.log(this.sideBarOn)
     this.sideBarOn = event
   }
+
 }

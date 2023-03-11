@@ -1,11 +1,21 @@
-<div class="row">
-  <div class="col-12">
-
-  </div>
-</div>
 
 <div class="row">
-  <div class="col-10 offset-1 bg-phone my-3 py-3">
+  <div class="col-sm-10 col-lg-6 offset-lg-3 offset-sm-1 bg-phone my-3 py-3 pl-3">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group px-2 pb-5 px-lg-4 py-lg-5 mx-lg-3">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group px-2 pb-5 px-lg-4 py-lg-5 mx-lg-3">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+        </div>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-4 text-center" *ngFor="let phone of buttonsPhone">
         <app-buttons [textNumber]=phone.textNumber [textData]="phone.textData">

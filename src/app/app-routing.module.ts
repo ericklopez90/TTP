@@ -14,6 +14,15 @@ const routes: Routes = [
     path: 'control-remoto',
     loadChildren: () => import('./views/remote-control/remote-control.module').then(m => m.RemoteControlModule)
   },
+  {
+    path: 'on-demand',
+    loadChildren: () => import('./views/ondemand/ondemand.module').then(m => m.OndemandModule)
+  },
+  {
+    path: 'television',
+    loadChildren: () => import('./views/television/television.module').then(m => m.TelevisionModule )
+  },
+  
 
 ];
 

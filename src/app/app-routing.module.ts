@@ -7,9 +7,14 @@ const routes: Routes = [
     loadChildren: () => import('./views/index/index.module').then(m => m.IndexModule)
   },
   {
+    path: 'telefono',
+    loadChildren: () => import('./views/phone/phone.module').then(m => m.PhoneModule)
+  },
+  {
     path: 'control-remoto',
     loadChildren: () => import('./views/remote-control/remote-control.module').then(m => m.RemoteControlModule)
-  }
+  },
+
 ];
 
 @NgModule({

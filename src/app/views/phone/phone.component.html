@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-12">
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-10 offset-1 bg-phone my-3 py-3">
+    <div class="row">
+      <div class="col-4 text-center" *ngFor="let phone of buttonsPhone">
+        <app-buttons [textNumber]=phone.textNumber [textData]="phone.textData">
+        </app-buttons>
+      </div>
+    </div>
+  </div>
+</div>

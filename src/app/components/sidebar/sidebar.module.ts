@@ -6,6 +6,7 @@ import { LinksComponent } from './components/links/links.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
+import { Router, RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MatIconModule } from '@angular/material/icon';
     CommonModule,
     MatDividerModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    RouterModule
     
   ],
   exports: [SidebarComponent]

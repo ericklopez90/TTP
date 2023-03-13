@@ -1,0 +1,46 @@
+.block-card{
+    height: 100px;
+    background-color: rgb(178, 183, 223);
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.block-card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.block-card:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease-out;
+}
+
+.block-card:hover ~ .block-card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+   
+
+
+.block-card1{
+    height: 100px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 20px;
+    text-align: center;    
+}
+
+.block-card1:not(:first-child) {
+    margin-left: -50px;
+}
+
+.block-card1:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease-out;
+}
+
+.block-card1:hover ~ .block-card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}

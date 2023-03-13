@@ -16,7 +16,10 @@ export class AppComponent {
   }
 
   desactiveSideBar(event: boolean){
-    console.log(this.sideBarOn)
+    this.sideBarOn = event
+  }
+
+  desactiveSideBarr(event: boolean){
     this.sideBarOn = event
   }
 

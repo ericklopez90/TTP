@@ -1,5 +1,6 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { linksPrimaryDummy, linksSecondaryDummy, linksMoreDummy } from './sidebar.dummy'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -15,10 +16,19 @@ export class SidebarComponent {
 
   sideBarActive = true;
   @Output() desactiveSideBarEvent = new EventEmitter<boolean>();
+  @Output() desactiveSideBarrEvent = new EventEmitter<boolean>();
+
+  constructor(private router:Router){
+  }
 
   desactiveSideBar():void{
     this.sideBarActive = true ? false : true
      this.desactiveSideBarEvent.emit(this.sideBarActive)
+  }
+
+  backIndex(){
+    this.router.navigateByUrl("/")
+    this.desactiveSideBarEvent.emit(false);
   }
 
 }

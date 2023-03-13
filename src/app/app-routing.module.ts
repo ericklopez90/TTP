@@ -2,10 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: '',
-    loadChildren: () => import('./views/index/index.module').then(m => m.IndexModule)
-  },
+
   {
     path: 'telefono',
     loadChildren: () => import('./views/phone/phone.module').then(m => m.PhoneModule)
@@ -25,6 +22,10 @@ const routes: Routes = [
   {
     path: 'estado-de-cuenta',
     loadChildren: () => import('./views/status-pay/status-pay.module').then(m => m.StatusPayModule )
+  },
+  {
+    path: '',
+    loadChildren: () => import('./views/start/start.module').then(m => m.StartModule )
   },
   
 

@@ -4,6 +4,7 @@ import { TelevisionComponent } from './television.component';
 import { Routes, RouterModule } from '@angular/router';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { CardComponent } from './components/card/card.component';
+import { VideoComponent } from './components/video/video.component';
 
 
 const routes: Routes = [
@@ -13,11 +14,11 @@ const routes: Routes = [
   }
 ];
 
-
 @NgModule({
   declarations: [
     TelevisionComponent,
-    CardComponent
+    CardComponent,
+    VideoComponent
   ],
   imports: [
     CommonModule,

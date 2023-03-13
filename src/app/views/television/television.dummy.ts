@@ -2,22 +2,22 @@ import { Cards } from "./television.interface";
 
 export const card: Cards[] = [
     {
-        title: "" ,
+        title: "La Batalla de Stalingrado" ,
         link: "sPSkK2_NwRo" ,
-        duration: "" ,
-        chanel: "" ,
+        duration: "20:12" ,
+        chanel: "PreGuerra" ,
     },
     {
-        title: "" ,
+        title: "Shot Party" ,
         link: "1ooy2CyFLH4" ,
-        duration: "" ,
-        chanel: "" ,
+        duration: "4:31" ,
+        chanel: "elcartel" ,
     },
     {
-        title: "" ,
+        title: "【咬人猫X露露】新" ,
         link: "u8VYw0WNDNc" ,
-        duration: "" ,
-        chanel: "" ,
+        duration: "2:57" ,
+        chanel: "Yaorenmao" ,
     },
 ]
 

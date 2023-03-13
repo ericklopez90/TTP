@@ -1,7 +1,6 @@
 import { card } from './television.dummy';
 import {
   Component,
-  OnInit
 } from '@angular/core';
 
 @Component({
@@ -10,24 +9,13 @@ import {
   styleUrls: ['./television.component.scss']
 })
 
-export class TelevisionComponent implements OnInit {
-  apiLoaded = false;
-  height = 300;
-  width = 400;
+export class TelevisionComponent {
   videoId = 'sPSkK2_NwRo';
   cards = card ;
+
   constructor() {}
-  ngOnInit() {
-    if (!this.apiLoaded) {
-      const tag = document.createElement('script');
-      tag.src = 'https://www.youtube.com/iframe_api';
-      document.body.appendChild(tag);
-      this.apiLoaded = true;
-    }
-  }
 
   change(event: string){
     this.videoId = event;
-    console.log(this.videoId)
   }
 }

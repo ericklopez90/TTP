@@ -49,6 +49,7 @@
   }
 
   .text-one {
+    color: #F2A717;
     position: absolute;
     top: 40%;
     left: 20px;
@@ -57,12 +58,14 @@
   }
   .text-two {
     position: absolute;
+    color: white;
     top: 50%;
     left: 20px;
     height: 5px;
     width: 70%;
   }
   .text-three {
+    color: #68BDDC;
     position: absolute;
     top: 70%;
     left: 20px;
@@ -70,11 +73,13 @@
     width: 70%;
   }
   .text-four {
+    color: white;
     position: absolute;
     top: 80%;
     left: 20px;
     height: 5px;
     width: 70%;
+    
   }
   
   .emptybar {
@@ -95,7 +100,7 @@
   }
   
   .card:hover .filledbar {
-    width: 70% ;
+    width: 100% ;
     transition: 0.4s ease-out;
   }
   

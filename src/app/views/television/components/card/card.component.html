@@ -1,1 +1,22 @@
-<p>card works!</p>
+<div class="principal">
+    
+    <!--F Card-->
+  <div class="card" *ngFor="let card of dataCard">
+    <div (click)="cambiar(card.link)">
+    <div class="row">
+        <div class="col-12 text-center">
+            <span class="title mt-3">{{card.title}}</span>
+        </div>
+    </div>
+    <div class="bar">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <span class="text-one">Duración</span>
+    <span class="text-two">{{card.duration}}</span>
+    <span class="text-three">Canal</span>
+    <span class="text-four">{{card.chanel}}</span>
+  </div>
+</div>
+
+</div>

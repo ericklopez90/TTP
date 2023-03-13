@@ -1,20 +1,23 @@
 <div class="row">
   <div class="col-12">
+
     <div class="row">
       <div class="col-sm-6 offset-sm-3 col-lg-6 offset-lg-3 my-3 py-3 pl-3">
+
         <div class="row">
           <div class="col-12">
             <youtube-player [videoId]="videoId" [height]="height" [width]="width" class="text-center"> 
             </youtube-player>
           </div>
         </div>
+
         <div class="row">
-          <div class="col-4 px-lg-4 px-3 my-4">
-
-
+          <div class="col-3 px-lg-4 px-3 my-4">
+            <app-card (linkButtonEvent)="change($event)" [dataCard]="cards" ></app-card>
           </div>
         </div>
+        
       </div>
     </div>
-  </div>
-</div>
+
+>

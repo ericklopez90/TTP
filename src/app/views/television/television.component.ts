@@ -1,3 +1,4 @@
+import { card } from './television.dummy';
 import {
   Component,
   OnInit
@@ -13,8 +14,8 @@ export class TelevisionComponent implements OnInit {
   apiLoaded = false;
   height = 300;
   width = 400;
-  videoId = '1ooy2CyFLH4';
-
+  videoId = 'sPSkK2_NwRo';
+  cards = card ;
   constructor() {}
   ngOnInit() {
     if (!this.apiLoaded) {
@@ -23,6 +24,10 @@ export class TelevisionComponent implements OnInit {
       document.body.appendChild(tag);
       this.apiLoaded = true;
     }
+  }
 
+  change(event: string){
+    this.videoId = event;
+    console.log(this.videoId)
   }
 }

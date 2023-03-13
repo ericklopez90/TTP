@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-12">
+
+    <div class="row">
+      <div class="col-10 offset-1 text-center">
+        <p ><strong class="text-color">{{status.title}}</strong></p>
+        <p class="text-color">{{status.subtitle}}</p>
+        <p class="text-color"><strong class="text-color">${{status.total}}</strong>.00</p>
+        <button mat-raised-button color="primary" class="mt-3 mb-4">Realizar Pago</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-10 offset-1 col-lg-2 offset-lg-5 bg-details">
+
+        <div class="row my-3">
+          <div class="col-12 text-center">
+            <span><strong class="text-color">{{status.details}}</strong></span>
+          </div>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="row my-3">
+          <div class="col-9 ">
+            <span class="text-color">{{status.mount}}</span>
+          </div>    
+          <div class="col-3 text-end">
+            <img src="assets/icons/abajo.svg">
+          </div>
+        </div> 
+
+        <mat-divider class="mb-3"></mat-divider>
+
+        <div class="row" *ngFor="let d of description">
+          <div class="col-9">
+            <p class="text-color">{{d.description}}</p>
+          </div>
+          <div class="col-3">
+            <p class="text-color">{{d.mountDescription}}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

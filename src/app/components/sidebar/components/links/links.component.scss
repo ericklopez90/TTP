@@ -6,3 +6,20 @@
 .action-principal {
     width: 80%;
 }
+
+
+.row{
+    cursor:pointer;
+}
+
+.animation{
+
+}
+.animation :not(active)::after{
+    opacity: 0.2;
+}
+
+.animation :not(active):hover{
+    color: rgba(#FFF, 0.25 );
+}
+                        

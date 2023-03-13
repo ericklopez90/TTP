@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'television',
     loadChildren: () => import('./views/television/television.module').then(m => m.TelevisionModule )
   },
+  {
+    path: 'estado-de-cuenta',
+    loadChildren: () => import('./views/status-pay/status-pay.module').then(m => m.StatusPayModule )
+  },
   
 
 ];

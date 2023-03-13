@@ -3,7 +3,7 @@
   <div class="col-3">
     <img class="icon-principal" [src]="icon">
   </div>
-  <div class="col-7">
+  <div class="col-7 animation">
     <span>{{text}}</span>
   </div>
   <div class="col-2">
@@ -14,11 +14,11 @@
 <!--More Button-->
 <ng-template #secondary>
   <div class="row align-items-center" (click)="routerNavigate(link)">
-    <div class="col-10 align-middle">
+    <div class="col-10 align-middle animation">
       <span>{{text}}</span>
     </div>
     <div class="col-2" *ngIf="action">
-      <span>></span>
+      <img src="assets/icons/derecha.svg" >
     </div>
   </div>
 </ng-template>

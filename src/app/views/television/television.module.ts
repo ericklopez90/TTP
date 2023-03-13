@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TelevisionComponent } from './television.component';
 import { Routes, RouterModule } from '@angular/router';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { CardComponent } from './components/card/card.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    TelevisionComponent
+    TelevisionComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,

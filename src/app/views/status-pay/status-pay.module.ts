@@ -4,7 +4,6 @@ import { StatusPayComponent } from './status-pay.component';
 import { MatButtonModule } from '@angular/material/button';
 import { Routes, RouterModule } from '@angular/router';
 import { MatDividerModule } from '@angular/material/divider';
-import { CardComponent } from './components/card/card.component';
 
 const routes: Routes = [
   {
@@ -16,7 +15,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     StatusPayComponent,
-    CardComponent
   ],
   imports: [
     CommonModule,
